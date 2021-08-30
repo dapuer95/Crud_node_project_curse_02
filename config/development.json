@@ -1,0 +1,13 @@
+{
+    "DBconfig" : {
+        "STRING" : "mongodb://localhost:27017/demo"
+    },
+    "appConfig" : {
+        "HOST" : "0.0.0.0",
+        "PORT" : "3000"
+    },
+    "jwtConfig" :{
+        "SEED" : "secreto",
+        "EXPIRATION" : "24 h"
+    }
+}
