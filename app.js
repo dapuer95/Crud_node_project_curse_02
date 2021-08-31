@@ -39,7 +39,7 @@ app.use('/api/login', login);
 app.use('/api/users', userCollection);
 app.use('/api/curses',  curseCollection);
 
-const port = config.get('appConfig.PORT') || 5050;
+const port = config.get('appConfig.PORT') || 5000;
 const host = config.get('appConfig.HOST') || "0.0.0.0";
 
 app.listen(port, host, () => console.log(`App corriendo en el puerto ${port} con el host ${host}`));
