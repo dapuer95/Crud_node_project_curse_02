@@ -9,22 +9,22 @@ const login = require('./routes/auth_routes');
 dotenv.config();
 
 
-// const conn = async() => {
-//     try {
-//         await mongoose.connect(config.get('DBconfig.STRING'), {
-//         useNewUrlParser: true, 
-//         useUnifiedTopology: true,
-//         useFindAndModify: false,
-//         useCreateIndex: true
-//     });
-//     console.log('Se ha establecido la conexion con MongoDB')
-//     } catch (error) {
-//         console.log(`No se ha establecido la conexion por el error: ${error}`)
-//     }
+const conn = async() => {
+    try {
+        await mongoose.connect(config.get('DBconfig.STRING'), {
+        useNewUrlParser: true, 
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true
+    });
+    console.log('Se ha establecido la conexion con MongoDB')
+    } catch (error) {
+        console.log(`No se ha establecido la conexion por el error: ${error}`)
+    }
     
-// }
+}
 
-// conn();
+conn();
 
 const app = express();
 

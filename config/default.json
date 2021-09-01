@@ -1,6 +1,6 @@
 {
     "DBconfig" : {
-        "STRING" : "mongodb://localhost:27017/demo"
+        "STRING" : "mongodb+srv://dapuer:35989514@cluster0.i9vvc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     },
     "appConfig" : {
         "HOST" : "0.0.0.0",
